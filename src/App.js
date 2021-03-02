@@ -25,21 +25,17 @@ class App extends React.Component {
   render() {
     return (
     
-    <div className="container">
-        
-             <h1 style={{display:'inline-block'}}> MultipleOptions 
-             <br/>
-               with Multiple add</h1>
+    <div>
               
           <MultiSelect 
             options={options}
     
-            name="department"
+           
             onChange={this.handleChange}
             />
          
        
-  </div>
+ </div>
     );
   }
 }
