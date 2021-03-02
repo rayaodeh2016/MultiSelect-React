@@ -1,0 +1,182 @@
+
+*{
+    font-family:'AvenirLTStd-Black';
+font-size: 12px;
+}
+
+@font-face{
+    font-family: AvenirLTStd-Black;
+    src: url(../components/fonts/AvenirLTStd-Black.otf);
+}
+.multiselect-wrapper  {
+    float: right;
+    width: 201px; 
+    height: 205px;
+    border-radius: 15px;
+    
+  }
+  .multiselect-wrapper+.is-active {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 75px;
+    
+  }
+  .multiselect__control {
+
+    background-color: #fff;
+   border-radius: 7px;
+   box-shadow:  3px 3px 5px 6px #ccc;
+  
+    position: relative;
+  }
+  
+  .multiselect__arrow-icon {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    transform: translateY(-50%);
+    color: #8C8C8C;
+    font-size: 14px;
+  }
+  .multiselect__placeholder {
+    color: #666;
+    line-height: 34px;
+    font-family: 'AvenirLTStd-Black';
+  }
+  .multiselect__placeholder.is-hidden {
+    display: none;
+  }
+  .multiselect__search-input {
+   border: none;
+   font-family: 'AvenirLTStd-Black';
+    height:51.4px;
+
+    font-size: inherit;
+    opacity: 1;
+    outline: 0px;
+    padding: 10px;
+    width: 100%;
+  }
+ 
+  .multiselect__result-area {
+    
+    background-color: #fff;
+    font-family: "AvenirLTStd-Black";
+    
+    display: none;
+  }
+  .multiselect__result-area.is-active {
+    display: block;
+    border-bottom-left-radius: 7px;
+   border-bottom-right-radius: 7px;
+   width: 201px;
+  
+  
+   
+  }
+  #contentArea {
+    
+    width: 201;
+ 
+    padding-left:20px;
+    padding-right:20px;
+    }
+
+  #border  {
+    border-top: 1px solid #c3c3c3;
+    
+   
+  }
+  
+  .multiselect__remove-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .multiselect-choices__item {
+  
+   
+    color: #06AAE0;
+    padding-left: 14px;
+    padding-right: 14px;
+
+    margin: 0 5px 5px 0;
+   
+    line-height: 1;
+  }
+  .multiselect-results__item {
+     display: block; 
+    line-height: 39px;
+    font-family:'Avenir';
+    border: none;
+  }
+  .multiselect-results__item:hover {
+   color: #3ebfcf;
+  }
+ 
+  .multiselect-wrapper.is-active{
+      background-color: none;
+
+  }
+  .multiselect-results__item.is-active {
+    
+    margin: 0 -1px;
+  }
+  .multiselect-results__item.is-active:first-child {
+    border-top: none;
+  }
+  .multiselect-results__item.is-active:last-child {
+    margin-bottom: -1px;
+  }
+  .multiselect-results__item.is-active + .multiselect-results__item {
+    border-top: none;
+  }
+  
+  .custom-checkbox {
+    display: none;
+  }
+  .custom-checkbox-label {
+    cursor: pointer;
+    font-family: AvenirLTStd-Black;
+ 
+  }
+  .custom-checkbox-label::before {
+    font-family:"AvenirLTStd-Black";
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    display:none;
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+  }
+  .custom-checkbox:checked + .custom-checkbox-label {
+    cursor: default;
+    pointer-events: none;        
+    text-decoration: none;
+    color: grey;
+  }
+   i::before{
+    content: "✚"
+  }
+  .custom-checkbox:checked +  .custom-checkbox-label i::before{
+     content: "✔";
+  }
+
+  li {
+
+padding-left: 14px;
+padding-right: 14px;
+
+width: 201px;
+  }
+  i{
+      font-weight: bold;
+  }
