@@ -22,8 +22,11 @@
       name={this.state.name}
       />
   </div>
+  
       
-      
+# it will be as :
+![bandicam 2021-03-02 18-46-49-807_Trim](https://user-images.githubusercontent.com/73646268/109684540-06d09100-7b89-11eb-80fe-aae8bae9c050.gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
