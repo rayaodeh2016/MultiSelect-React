@@ -9,7 +9,7 @@ font-size: 12px;
     src: url(../components/fonts/AvenirLTStd-Black.otf);
 }
 .multiselect-wrapper  {
-    float: right;
+  
     width: 201px; 
     height: 205px;
     border-radius: 15px;
