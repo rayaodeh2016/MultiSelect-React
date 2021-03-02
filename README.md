@@ -1,7 +1,7 @@
 ![bandicam 2021-03-02 16-32-01-167](https://user-images.githubusercontent.com/73646268/109663951-55743000-7b75-11eb-98e8-88b2e1bd3cd3.gif)
 
 
-# To disply Selected item put this code in line 
+# To disply Selected item put this code in line 108
      <div         
         onClick={this.handleDropdownClick}>
         <span className={`multiselect__placeholder ${this.state.selectedOptions.length ?'' : 'is-hidden' }`}>Selected Iteam</span>
