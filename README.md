@@ -1,27 +1,27 @@
 ![bandicam 2021-03-02 16-32-01-167](https://user-images.githubusercontent.com/73646268/109663951-55743000-7b75-11eb-98e8-88b2e1bd3cd3.gif)
 
 
-# To disply Selected item put this code in line 108
+# To disply Selected item put this code after line 109
      <div         
-        onClick={this.handleDropdownClick}>
-        <span className={`multiselect__placeholder ${this.state.selectedOptions.length ?'' : 'is-hidden' }`}>Selected Iteam</span>
-        <span className={`multiselect__arrow-icon fa ${this.state.dropdownActive ? 'fa-chevron-up' : 'fa-chevron-down'}`}></span>
-        <ul className="multiselect-choices">
-          {
-            this.state.selectedOptions.map(option => <div key={option.value} className="multiselect-choices__item" style={{
-              display:" inline-block"}}>
-                {option.name}
-                <span className="multiselect__remove-icon fa fa-times" onClick={(e) => this.handleOptionRemoveClick(option.value, e)}></span>
-              </div>
-            )
-          }
-        </ul>
-        <input 
-          type="hidden"
-          value={this.state.selectedOptions.map(opt => opt.value)}
-          name={this.state.name}
-          />
-      </div>
+    onClick={this.handleDropdownClick}>
+    <span className={`multiselect__placeholder ${this.state.selectedOptions.length ?'' : 'is-hidden' }`}>Selected Iteam</span>
+    
+    <ul className="multiselect-choices">
+      {
+        this.state.selectedOptions.map(option => <div key={option.value} className="multiselect-choices__item" style={{
+          display:" inline-block"}}>
+            {option.name}
+            <span className="multiselect__remove-icon fa fa-times" onClick={(e) => this.handleOptionRemoveClick(option.value, e)}></span>
+          </div>
+        )
+      }
+    </ul>
+    <input 
+      type="hidden"
+      value={this.state.selectedOptions.map(opt => opt.value)}
+      name={this.state.name}
+      />
+  </div>
       
       
 # Getting Started with Create React App
